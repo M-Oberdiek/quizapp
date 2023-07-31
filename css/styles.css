@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  margin: 0 auto;
+  font-family: 'Antonio', 'Arial Narrow', 'Avenir Next Condensed', sans-serif;
+}
+
+.titel{
+    background-color:blue;
+    color: white;
+    font-size: 350%;
+    height: 80px;
+    border-radius: 0 50px 50px 0;
+    padding: 5px 0px 0px 20px;
+    margin-right: 20px;
+
+}
+
+‚
