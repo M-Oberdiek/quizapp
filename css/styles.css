@@ -110,3 +110,23 @@ footer {
 img {
   height: 50px;
 }
+.aktiv {
+  background-color: orange;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+
+.profPic {
+  height: 150px;
+}
+.profName {
+  display: flex;
+  color: white;
+  font-size: 200%;
+  border: 2px solid orange;
+  border-radius: 20px;
+  height: 200px;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+}
