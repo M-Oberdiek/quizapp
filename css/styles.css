@@ -12,8 +12,6 @@ header {
   background-color: black;
 }
 
-
-
 .titel {
   position: fixed;
   top: 0;
@@ -27,15 +25,14 @@ header {
   border-radius: 0 50px 50px 0;
   padding: 5px 0px 0px 20px;
   margin: 0 20px 0 0;
-
 }
 main {
-display: flex;
-position:relative;
-top:120px;
-align-items: center;
-justify-content: center;
-flex-direction: column;
+  display: flex;
+  position: relative;
+  top: 120px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .card {
   display: flex;
@@ -43,7 +40,7 @@ flex-direction: column;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position:relative
+  position: relative;
   color: white;
   font-size: 150%;
   height: 300px;
@@ -62,9 +59,12 @@ flex-direction: column;
   height: 100px;
   width: 400px;
   border-radius: 10px;
-  padding: ;
   text-align: center;
   justify-content: center;
+}
+.show:hover {
+  background-color: rgba(0, 204, 255);
+  cursor: pointer;
 }
 
 ul {
@@ -85,7 +85,7 @@ li {
 .bookmark {
   background-color: azure;
   height: 40px;
-  width:  30px;
+  width: 30px;
   border: 1 solid rgba(0, 204, 255);
   border-radius: 0 0 20px 20px;
   position: absolute;
