@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  margin: 0 auto;
+  font-family: "Antonio", "Arial Narrow", "Avenir Next Condensed", sans-serif;
+}
