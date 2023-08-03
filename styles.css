@@ -65,9 +65,9 @@ img {
 .profPic {
   height: 150px;
   border: 2px solid orange;
-  border-radius: 20px;
+  border-radius: 50%;
   height: 200px;
-  width: 80%;
+  width: auto;
   padding: 20px;
   background-color: rgb(120, 120, 120);
 }
@@ -83,17 +83,25 @@ img {
 }
 
 .ProInfo {
+  display: flex;
+  flex-direction: column;
   color: white;
 }
 
 .ProAbout {
-  color: white;
   border: 2px solid orange;
   border-radius: 20px;
   height: 50px;
   width: 200px;
-  justify-content: center;
-  align-items: center;
+}
+
+.aboutText {
+  border: 2px solid orange;
+  border-radius: 20px;
+  height: 150px;
+  width: 400px;
+  padding: 20px;
+  margin: 10px;
 }
 
 /* The switch - the box around the slider */
