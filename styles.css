@@ -13,6 +13,10 @@ main {
   flex-direction: column;
 }
 
+h2,
+h3 {
+  color: white;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -27,28 +31,6 @@ li {
   padding: 16px;
   text-decoration: none;
   flex-wrap: wrap;
-}
-
-footer {
-  background-color: #7788ff;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 80px;
-  z-index: 1;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-around;
-}
-img {
-  height: 50px;
-}
-.aktiv {
-  background-color: orange;
-  margin-top: 5px;
-  border-radius: 20px;
 }
 
 .profPicName {
@@ -120,6 +102,7 @@ img {
 
 .numCards,
 .numBookmarks {
+  display: flex;
   border: 2px solid orange;
   border-radius: 20px;
   height: 80px;
@@ -132,75 +115,119 @@ img {
   background-color: orange;
   border-radius: 10px;
   border: 1px solid #7788ff;
-  height: 60px;
+  height: 50px;
   width: 80px;
   padding: 15px 0 0 8px;
 }
 
-/* The switch - the box around the slider */
-.switch {
+.countCards,
+.countBookmarks {
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.switcher {
+  display: flex;
+  align-items: flex-end;
+}
+
+.settings {
+  align-self: flex-start;
+  border: 2px solid orange;
+  border-radius: 20px;
+  height: 50px;
+  width: 200px;
+  padding: 0 0 20px 20px;
+}
+
+.toggle > div {
   position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+  padding: 10px;
+  width: 150px;
+  height: 75px;
+  border-radius: 50px;
+  box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.5),
+    0px 1px 1px 0 rgba(255, 255, 255, 1);
+  background: rgb(189, 191, 193);
+  background: linear-gradient(
+    to bottom,
+    rgba(189, 191, 193, 1) 0%,
+    rgba(249, 251, 254, 1) 100%
+  );
 }
 
-/* Hide default HTML checkbox */
-.switch input {
+.toggle > div > input[type="checkbox"] {
+  position: absolute;
   opacity: 0;
-  width: 0;
-  height: 0;
+  top: -3px;
+  left: 17px;
+  width: 130px;
+  height: 55px;
+  z-index: 5;
 }
 
-/* The slider */
-.slider {
+.toggle > div > input[type="checkbox"] ~ div {
+  width: 130px;
+  height: 55px;
+  border-radius: 50px;
+  border: 1px solid #979797;
+  box-shadow: inset 5px 0 0 0 rgba(0, 0, 0, 0.1),
+    inset -5px 0 0 0 rgba(0, 0, 0, 0.1),
+    inset -6px 0 0 0 rgba(255, 255, 255, 0.5),
+    inset -4px 6px 11px -5px rgba(0, 0, 0, 0.2),
+    inset 1px 1px 0 0 rgba(255, 255, 255, 1),
+    -6px 4px 11px -7px rgba(0, 0, 0, 0.5);
+  background: rgb(253, 252, 251);
+  background: linear-gradient(
+    to right,
+    rgba(253, 252, 251, 1) 37%,
+    rgba(229, 229, 229, 1) 61%
+  );
+}
+
+.toggle > div > input[type="checkbox"]:checked ~ div {
+  box-shadow: inset -5px 0 0 0 rgba(0, 0, 0, 0.1),
+    inset 5px 0 0 0 rgba(0, 0, 0, 0.1), inset 6px 0 0 0 rgba(255, 255, 255, 0.5),
+    inset -4px 6px 11px -5px rgba(0, 0, 0, 0.2),
+    inset 1px 1px 0 0 rgba(255, 255, 255, 1),
+    -6px 4px 11px -7px rgba(0, 0, 0, 0.5);
+  background: rgb(229, 229, 229);
+  background: linear-gradient(
+    to right,
+    rgba(229, 229, 229, 1) 39%,
+    rgba(253, 252, 251, 1) 63%
+  );
+}
+
+.toggle > div > input[type="checkbox"] ~ div:before {
+  content: attr(data-unchecked);
+  display: block;
   position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #7788ff;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  border-radius: 10px;
+  top: 27px;
+  left: 30px;
 }
 
-.slider:before {
+.toggle > div > input[type="checkbox"] ~ div:after {
+  content: attr(data-checked);
+  color: #df0000;
+  text-shadow: 0 1px 0 #fff, 0px 0 7px #df0000;
+  filter: dropshadow(color=#df0000, offx=0, offy=0);
+  display: block;
   position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: black;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  border-radius: 10px;
+  top: 27px;
+  left: 100px;
 }
 
-input:checked + .slider {
-  background-color: orange;
+.toggle > div > input[type="checkbox"]:checked ~ div:before {
+  color: #119400;
+  text-shadow: 0 1px 0 #fff, 0px 0 7px #007a08;
+  filter: dropshadow(color=#007a08, offx=0, offy=0);
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px orange;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+.toggle > div > input[type="checkbox"]:checked ~ div:after {
+  color: #000;
+  text-shadow: none;
+  filter: dropshadow(none);
 }

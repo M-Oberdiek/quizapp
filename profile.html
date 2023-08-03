@@ -36,7 +36,7 @@
       <section class="counters">
         <div class="numCards">
           <article class="cardSign">Questions</article>
-          <article><p>12</p></article>
+          <article class="countCards"><p>12</p></article>
         </div>
         <div class="numBookmarks">
           <article class="bookmarkSign">
@@ -46,15 +46,23 @@
               title="Bookmarks"
             />
           </article>
-          <article><p>9</p></article>
+          <article class="countBookmarks"><p>9</p></article>
         </div>
       </section>
 
-      <label class="switch">
-        <h2>Light mode:</h2>
-        <input type="checkbox" aria-label="Switcher night mode" />
-        <span class="slider round"></span>
-      </label>
+      <section class="switcher">
+        <div class="settings"><h2>Settings</h2></div>
+        <div><h3>Light mode:</h3></div>
+
+        <div class="fx-block">
+          <div class="toggle">
+            <div>
+              <input type="checkbox" id="toggles" />
+              <div data-unchecked="On" data-checked="Off"></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <section>
