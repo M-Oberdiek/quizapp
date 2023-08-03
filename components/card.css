@@ -1,0 +1,42 @@
+.card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+  font-size: 150%;
+  height: 300px;
+  width: 80%;
+  background-color: orange;
+  margin: 10px 20px 20px 20px;
+  padding: 20px;
+  border: 1px solid #7788ff;
+  border-radius: 20px;
+}
+
+.show {
+  background-color: aqua;
+  font-size: 150%;
+  color: blueviolet;
+  height: 100px;
+  width: 400px;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+}
+.show:hover {
+  background-color: #7788ff;
+  cursor: pointer;
+}
+.bookmark {
+  background-color: azure;
+  height: 40px;
+  width: 30px;
+  border: 3px solid#7788ff;
+  border-radius: 0 0 20px 20px;
+  position: absolute;
+  top: -10px;
+  right: 40px;
+}

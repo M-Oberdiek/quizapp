@@ -3,21 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Star Trek Quiz App</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>Star Trek - Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
       <h1 class="titel">Star Trek - Quiz App</h1>
     </header>
     <main>
-      <section class="profName">
-        <img
-          class="profPic"
-          src="https://cdn.pixabay.com/photo/2016/12/13/21/20/alien-1905155_640.png"
-          alt="Profile picture"
-        />
-        <p>Bloxi Triximus</p>
+      <section class="profPicName">
+        <div>
+          <img
+            class="profPic"
+            src="https://cdn.pixabay.com/photo/2016/12/13/21/20/alien-1905155_640.png"
+            alt="Profile picture"
+          />
+        </div>
+        <div><p class="profName">Bloxi Triximus</p></div>
       </section>
 
       <section class="ProInfo">
@@ -32,7 +34,7 @@
       </section>
 
       <label class="switch">
-        <input type="checkbox" />
+        <input type="checkbox" aria-label="Switcher night mode" />
         <span class="slider round"></span>
       </label>
     </main>
