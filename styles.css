@@ -51,20 +51,37 @@ img {
   border-radius: 20px;
 }
 
-.profPic {
-  height: 150px;
-}
-.profName {
+.profPicName {
   display: flex;
   color: white;
   font-size: 200%;
-  border: 2px solid orange;
   border-radius: 20px;
-  height: 200px;
+  height: 250px;
   width: 80%;
   justify-content: space-around;
   align-items: center;
 }
+
+.profPic {
+  height: 150px;
+  border: 2px solid orange;
+  border-radius: 20px;
+  height: 200px;
+  width: 80%;
+  padding: 20px;
+  background-color: rgb(120, 120, 120);
+}
+
+.profName {
+  height: 150px;
+  border: 2px solid orange;
+  border-radius: 20px;
+  height: 200px;
+  width: 80%;
+  padding: 20px;
+  background-color: rgb(120, 120, 120);
+}
+
 .ProInfo {
   color: white;
 }
