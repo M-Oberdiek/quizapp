@@ -10,10 +10,10 @@
   height: 300px;
   width: 80%;
   background-color: orange;
-  margin: 10px 20px 20px 20px;
-  padding: 20px;
+  margin: 10px 1.25rem 1.25rem 1.25rem;
+  padding: 1.25rem;
   border: 1px solid #7788ff;
-  border-radius: 20px;
+  border-radius: 1.25rem;
 }
 
 .show {
@@ -35,8 +35,36 @@
   height: 40px;
   width: 30px;
   border: 3px solid#7788ff;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 1.25rem 1.25rem;
   position: absolute;
-  top: -10px;
-  right: 40px;
+  top: -290px;
+  right: -290px;
+}
+.bookmarkActive {
+  background-color: #7788ff;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #7788ff;
+  border: 2px solid white;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+
+  /* Position the tooltip */
+  position: absolute;
+  top: -270px;
+  right: -270px;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
