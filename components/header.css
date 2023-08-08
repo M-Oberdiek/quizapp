@@ -2,8 +2,8 @@
   position: fixed;
   top: 0;
   z-index: 1;
-  background-color: #7788ff;
-  color: white;
+  background-color: var(--blue-color);
+  color: var(--colorText-dark);
   font-size: 350%;
   height: 120px;
   width: 100%;

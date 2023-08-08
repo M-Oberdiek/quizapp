@@ -9,10 +9,10 @@
   font-size: 150%;
   height: 300px;
   width: 80%;
-  background-color: orange;
+  background-color: var(--orange-color);
   margin: 10px 1.25rem 1.25rem 1.25rem;
   padding: 1.25rem;
-  border: 1px solid #7788ff;
+  border: 1px solid var(--blue-color);
   border-radius: 1.25rem;
 }
 
@@ -27,21 +27,21 @@
   justify-content: center;
 }
 .show:hover {
-  background-color: #7788ff;
+  background-color: var(--blue-color);
   cursor: pointer;
 }
 .bookmark {
   background-color: azure;
   height: 40px;
   width: 30px;
-  border: 3px solid#7788ff;
+  border: 3px solid var(--blue-color);
   border-radius: 0 0 1.25rem 1.25rem;
   position: absolute;
   top: -290px;
   right: -290px;
 }
 .bookmarkActive {
-  background-color: #7788ff;
+  background-color: var(--blue-color);
 }
 
 .tooltip {
@@ -51,9 +51,9 @@
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
-  background-color: #7788ff;
-  border: 2px solid white;
-  color: #fff;
+  background-color: var(--blue-color);
+  border: 2px solid var(--colorText-dark);
+  color: var(--colorText-dark);
   text-align: center;
   border-radius: 10px;
   padding: 5px;

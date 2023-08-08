@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: var(--backgroud-dark);
   margin: 0 auto;
   font-family: "Antonio", "Arial Narrow", "Avenir Next Condensed", sans-serif;
 }

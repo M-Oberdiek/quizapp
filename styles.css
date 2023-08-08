@@ -4,6 +4,16 @@
 @import "components/navigation.css";
 @import "global.css";
 
+:root {
+  --blue-color: #7788ff;
+  --orange-color: orange;
+  --backgroud-dark: black;
+  --background-light: rgb(230, 230, 230);
+  --background-profil: rgb(120, 120, 120);
+  --colorText-dark: white;
+  --colorText-light: black;
+}
+
 main {
   display: flex;
   position: relative;
@@ -15,7 +25,7 @@ main {
 
 h2,
 h3 {
-  color: white;
+  color: var(--colorText-dark);
 }
 
 .profPicName {
@@ -23,7 +33,7 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  color: white;
+  color: var(--colorText-dark);
   font-size: 200%;
   border-radius: 1.25rem;
   height: 250px;
@@ -32,22 +42,22 @@ h3 {
 
 .profPic {
   height: 150px;
-  border: 2px solid orange;
+  border: 2px solid var(--orange-color);
   border-radius: 50%;
   height: 200px;
   width: auto;
   padding: 1.25rem;
-  background-color: rgb(120, 120, 120);
+  background-color: var(--background-profil);
 }
 
 .profName {
   height: 150px;
-  border: 2px solid orange;
+  border: 2px solid var(--orange-color);
   border-radius: 1.25rem;
   height: 200px;
   width: 80%;
   padding: 1.25rem;
-  background-color: rgb(120, 120, 120);
+  background-color: var(--background-profil);
   vertical-align: middle;
 }
 
@@ -55,12 +65,12 @@ h3 {
   display: flex;
 
   flex-direction: column;
-  color: white;
+  color: var(--colorText-dark);
   margin: 1.25rem;
 }
 
 .ProAbout {
-  border: 2px solid orange;
+  border: 2px solid var(--orange-color);
   border-radius: 1.25rem;
   height: 50px;
   width: 200px;
@@ -71,7 +81,7 @@ h3 {
   flex: 1;
   flex-wrap: wrap;
   text-align: justify;
-  border: 2px solid orange;
+  border: 2px solid var(--orange-color);
   border-radius: 1.25rem;
   height: 150px;
   padding: 20px;
@@ -81,7 +91,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  color: white;
+  color: var(--colorText-dark);
   margin: 20px;
 }
 
@@ -90,7 +100,7 @@ h3 {
   display: flex;
   align-items: center;
   text-align: center;
-  border: 2px solid orange;
+  border: 2px solid var(--orange-color);
   border-radius: 1.25rem;
   height: 80px;
   width: 160px;
@@ -99,9 +109,9 @@ h3 {
 }
 
 .cardImage {
-  background-color: orange;
+  background-color: var(--orange-color);
   border-radius: 10px;
-  border: 1px solid #7788ff;
+  border: 1px solid var(--blue-color);
   height: 50px;
   width: 80px;
   padding: 15px 0 0 0px;
@@ -123,7 +133,7 @@ h3 {
 .settings {
   display: flex;
 
-  border: 2px solid orange;
+  border: 2px solid var(--orange-color);
   border-radius: 1.25rem;
   height: 50px;
   width: 200px;
