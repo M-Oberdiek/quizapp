@@ -1,0 +1,35 @@
+.toggleButton {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  background-color: var(--background-dark);
+  color: var(--colorText-light);
+  border: 4px solid var(--orange-color);
+  border-radius: 1.25rem;
+  height: 5rem;
+  width: 50%;
+  padding: 10px;
+}
+
+.toggleButton:hover {
+  background-color: var(--background-light);
+  color: black;
+  outline-color: var(--orange-color);
+  cursor: pointer;
+}
+
+.settingText {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  height: 80px;
+  width: 50%;
+  padding: 5px;
+}
+.settings {
+  display: flex;
+  border: 2px solid var(--orange-color);
+  border-radius: 1.25rem;
+  height: 5rem;
+  width: 50%;
+}

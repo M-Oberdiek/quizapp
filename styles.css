@@ -4,6 +4,16 @@
 @import "components/navigation.css";
 @import "global.css";
 
+:root {
+  --blue-color: #7788ff;
+  --orange-color: orange;
+  --background-dark: black;
+  --background-light: rgb(230, 230, 230);
+  --background-profil: rgb(120, 120, 120);
+  --colorText-dark: white;
+  --colorText-light: black;
+}
+
 main {
   display: flex;
   position: relative;
@@ -13,153 +23,106 @@ main {
   flex-direction: column;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-li {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-  flex-wrap: wrap;
-}
-
-footer {
-  background-color: #7788ff;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 80px;
-  z-index: 1;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-around;
-}
-img {
-  height: 50px;
-}
-.aktiv {
-  background-color: orange;
-  margin-top: 5px;
-  border-radius: 20px;
+h2,
+h3 {
+  color: var(--colorText-dark);
 }
 
 .profPicName {
   display: flex;
-  color: white;
-  font-size: 200%;
-  border-radius: 20px;
-  height: 250px;
-  width: 80%;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  color: var(--colorText-dark);
+  font-size: 200%;
+  border-radius: 1.25rem;
+  height: 250px;
+  width: 80%;
+  margin: -10px;
 }
 
 .profPic {
   height: 150px;
-  border: 2px solid orange;
-  border-radius: 20px;
+  border: 2px solid var(--orange-color);
+  border-radius: 50%;
   height: 200px;
-  width: 80%;
-  padding: 20px;
-  background-color: rgb(120, 120, 120);
+  width: auto;
+  padding: 1.25rem;
+  background-color: var(--background-profil);
 }
 
 .profName {
   height: 150px;
-  border: 2px solid orange;
-  border-radius: 20px;
+  border: 2px solid var(--orange-color);
+  border-radius: 1.25rem;
   height: 200px;
   width: 80%;
-  padding: 20px;
-  background-color: rgb(120, 120, 120);
+  padding: 1.25rem;
+  background-color: var(--background-profil);
+  vertical-align: middle;
 }
 
 .ProInfo {
-  color: white;
+  display: flex;
+
+  flex-direction: column;
+  color: var(--colorText-dark);
+  margin: 1.25rem;
 }
 
 .ProAbout {
-  color: white;
-  border: 2px solid orange;
-  border-radius: 20px;
+  border: 2px solid var(--orange-color);
+  border-radius: 1.25rem;
   height: 50px;
   width: 200px;
-  justify-content: center;
+  padding: 10px 0 0 20px;
+  margin-bottom: -15px;
+}
+
+.aboutText {
+  flex: 1;
+  flex-wrap: wrap;
+  text-align: justify;
+  border: 2px solid var(--orange-color);
+  border-radius: 1.25rem;
+  height: 150px;
+  padding: 20px;
+  margin-bottom: -20px;
+}
+
+.counters {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: var(--colorText-dark);
+  margin: 20px;
+}
+
+.numCards,
+.numBookmarks {
+  display: flex;
   align-items: center;
+  text-align: center;
+  border: 2px solid var(--orange-color);
+  border-radius: 1.25rem;
+  height: 80px;
+  width: 160px;
+  padding: 10px;
+  margin: 20px;
 }
 
-/* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+.cardImage {
+  background-color: var(--orange-color);
+  border-radius: 10px;
+  border: 1px solid var(--blue-color);
+  height: 50px;
+  width: 5rem;
+  padding: 15px 0 0 0px;
 }
 
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #7788ff;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: black;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-input:checked + .slider {
-  background-color: orange;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px orange;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+.countCards,
+.countBookmarks {
+  flex: 1;
+  font-size: xx-large;
+  font-weight: bolder;
 }

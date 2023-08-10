@@ -2,13 +2,13 @@
   position: fixed;
   top: 0;
   z-index: 1;
-  background-color: #7788ff;
-  color: white;
-  font-size: 350%;
-  height: 120px;
+  background-color: var(--blue-color);
+  color: var(--colorText-dark);
+  font-size: 3.6rem;
+  height: 13%;
   width: 100%;
-  border: 20px solid black;
-  border-radius: 0 50px 50px 0;
-  padding: 5px 0px 0px 20px;
-  margin: 0 20px 0 0;
+  border: 1.25rem solid black;
+  border-radius: 0 3.125rem 3.125rem 0;
+  padding: 0.313rem 0px 0px 1.25rem;
+  margin: 0 1.25rem 0 0;
 }
