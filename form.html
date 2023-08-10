@@ -15,18 +15,44 @@
       <form action="" data-js="form">
         <h2>Create a new question card</h2>
         <hr />
-        <label><h2>Your question</h2></label>
-        <textarea class="newQuestion" rows="5" cols="33"> </textarea>
+        <label for="newQuestion"><h2>Your question</h2></label>
+        <textarea
+          maxlength="150"
+          class="newQuestion"
+          data-js="newQustion"
+          name="newQuestion"
+          rows="5"
+          cols="33"
+        >
+        </textarea>
 
-        <label for="newanswer"><h2>Your answer</h2></label>
-        <textarea class="newAnswer" name="newanswer" rows="5" cols="33">
+        <label for="newAnswer"><h2>Your answer</h2></label>
+        <textarea
+          maxlength="150"
+          class="newAnswer"
+          name="newAnswer"
+          data-js="newAnswer"
+          rows="5"
+          cols="33"
+        >
         </textarea>
 
         <label for="categorie"><h2>Categorie</h2></label>
-        <input type="text" class="categorie" name="categorie" />
+        <input
+          type="text"
+          class="categorie"
+          name="categorie"
+          data-js="categorie"
+        />
 
-        ><button type="submit" class="submitButton">Submit</button>
+        ><button type="button" data-js="add-button" class="add-Button">
+          Submit
+        </button>
       </form>
+
+      <ol class="card-container" data-js="card-container">
+        <li class="card-container__newCard">I'm a new question card!</li>
+      </ol>
     </main>
     <footer>
       <section>
