@@ -1,3 +1,18 @@
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  console.log(event.target);
+});
+
+const textarea = document.querySelector('[data-js="newQuestion"]');
+const charCounterQuestion = document.querySelector(
+  '[data-js="charCounterQuestion"]'
+);
+console.log(textarea);
+textarea.addEventListener("input", (event) => {
+  const restChar = 150 - textarea.value.length;
+  charCounterQuestion.textContent = `Verbleibende Zeichen: ${restChar}`;
+});
+
 const bookmark = document.querySelector('[data-js="bookmark"]');
 console.log(bookmark);
 bookmark.addEventListener("click", () => {
