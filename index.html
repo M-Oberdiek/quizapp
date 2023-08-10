@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Star Trek Quiz App</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
     <header>
@@ -13,9 +14,15 @@
     <main>
       <section class="card">
         <h2>What is the first name from Captain Kirk?</h2>
-        <button type="button" class="show" aria-label="Show answer">
+        <button
+          type="button"
+          class="show"
+          aria-label="Show answer"
+          data-js="show-button"
+        >
           Show answer
         </button>
+        <p class="answer" data-js="answer">James Tiberius</p>
         <ul class="cat">
           <li><p class="cat1"># Crew</p></li>
           <li><p class="cat2"># Spaceships</p></li>
@@ -23,23 +30,37 @@
         </ul>
 
         <section class="tooltip">
-          <section class="bookmark" aria-label="bookmark"></section>
+          <button
+            class="bookmark"
+            aria-label="bookmark"
+            data-js="bookmark"
+          ></button>
           <span class="tooltiptext">Click here if answered!</span>
         </section>
       </section>
 
       <section class="card">
         <h2>What is a Tribble?</h2>
-        <button type="button" class="show" aria-label="Show answer">
+        <button
+          type="button"
+          class="show"
+          aria-label="Show answer"
+          data-js="show-button"
+        >
           Show answer
         </button>
+        <p class="answer" data-js="answer">furry animal</p>
         <ul class="cat">
           <li><p class="cat1"># categorie 1</p></li>
           <li><p class="cat2"># categorie 2</p></li>
           <li><p class="cat3"># categorie 3</p></li>
         </ul>
         <section class="tooltip">
-          <section class="bookmark" aria-label="bookmark"></section>
+          <button
+            class="bookmark"
+            aria-label="bookmark"
+            data-js="bookmark"
+          ></button>
           <span class="tooltiptext">Click here if answered!</span>
         </section>
       </section>
@@ -71,7 +92,11 @@
           <li><p class="cat3"># categorie 3</p></li>
         </ul>
         <section class="tooltip">
-          <section class="bookmark" aria-label="bookmark"></section>
+          <button
+            class="bookmark bookmark--activ"
+            aria-label="bookmark"
+            data-js="bookmark"
+          ></button>
           <span class="tooltiptext">Click here if answered!</span>
         </section>
       </section>
@@ -94,6 +119,15 @@
                 src="https://cdn.iconscout.com/icon/premium/png-512-thumb/bookmark-check-6403578-5388118.png?f=avif&w=256"
                 alt="Bookmark"
                 title="Bookmarks"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="form.html">
+              <img
+                src="https://cdn.iconscout.com/icon/premium/png-512-thumb/calendar-plus-6403588-5388028.png?f=avif&w=256"
+                alt="New question card"
+                title="New question card"
               />
             </a>
           </li>
