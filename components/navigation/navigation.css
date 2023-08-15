@@ -37,7 +37,7 @@ img {
   border-radius: 1.25rem;
 }
 
-li:hover {
+.nav li:hover {
   background-color: var(--orange-color);
   margin-top: 0.313rem;
   border-radius: 1.25rem;

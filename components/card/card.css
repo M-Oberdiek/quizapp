@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   color: white;
   font-size: 150%;
   height: 350px;
@@ -21,6 +20,7 @@
 }
 .answer--show {
   visibility: visible;
+  color: black;
 }
 
 .show {

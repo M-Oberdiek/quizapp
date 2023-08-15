@@ -1,18 +1,3 @@
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  console.log(event.target);
-});
-
-const textarea = document.querySelector('[data-js="newQuestion"]');
-const charCounterQuestion = document.querySelector(
-  '[data-js="charCounterQuestion"]'
-);
-console.log(textarea);
-textarea.addEventListener("input", (event) => {
-  const restChar = 150 - textarea.value.length;
-  charCounterQuestion.textContent = `Verbleibende Zeichen: ${restChar}`;
-});
-
 const bookmark = document.querySelector('[data-js="bookmark"]');
 console.log(bookmark);
 bookmark.addEventListener("click", () => {
@@ -23,7 +8,7 @@ const answer = document.querySelector('[data-js="answer"]');
 const showAnswer = document.querySelector('[data-js="show-button"]');
 showAnswer.addEventListener("click", () => {
   answer.classList.toggle("answer--show");
-
+  console.log(answer);
   if (answer.classList.contains("answer--show")) {
     showAnswer.innerText = "Hide answer";
   } else if (answer.classList.contains("answer")) {
@@ -42,3 +27,17 @@ function addCard(question, answer, categorie) {
   console.log(newText);
 }
 addCard(A, Q, C);
+// form.addEventListener("submit", (event) => {
+//event.preventDefault();
+//console.log(event.target);
+//});
+
+//const textarea = document.querySelector('[data-js="newQuestion"]');
+//const charCounterQuestion = document.querySelector(
+//  '[data-js="charCounterQuestion"]'
+//);
+//console.log(textarea);
+//textarea.addEventListener("input", (event) => {
+//  const restChar = 150 - textarea.value.length;
+//  charCounterQuestion.textContent = `Verbleibende Zeichen: ${restChar}`;
+//});
