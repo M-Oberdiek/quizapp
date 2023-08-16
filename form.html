@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Star Trek - Quiz App</title>
+    <title>Star Trek Quiz App</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="./js/index.js" defer></script>
   </head>
@@ -12,52 +12,51 @@
       <h1 class="titel">Star Trek - Quiz App</h1>
     </header>
     <main>
-      <section class="profPicName">
-        <section>
-          <img
-            class="profPic"
-            src="https://cdn.pixabay.com/photo/2016/12/13/21/20/alien-1905155_640.png"
-            alt="Profile picture"
-          />
-        </section>
-        <section><p class="profName">Bloxi Triximus</p></section>
-      </section>
+      <form action="" data-js="form">
+        <h2>Create a new question card</h2>
+        <hr />
+        <label for="newQuestion"><h2>Your question</h2></label>
+        <textarea
+          maxlength="150"
+          class="newQuestion"
+          id="newQuestion"
+          data-js="newQustion"
+          name="newQuestion"
+          rows="5"
+          cols="33"
+        >
+        </textarea>
+        <p id="charCounterQuestion" data-js="charCounterQuestion">150/150</p>
+        <label for="newAnswer"><h2>Your answer</h2></label>
+        <textarea
+          maxlength="150"
+          class="newAnswer"
+          id="newAnswer"
+          name="newAnswer"
+          data-js="newAnswer"
+          rows="5"
+          cols="33"
+        >
+        </textarea>
+        <p id="charCounterAnswer" data-js="charCounterAnswer">150/150</p>
+        <label for="categorie"><h2>Categorie</h2></label>
+        <input
+          type="text"
+          class="categorie"
+          id="categorie"
+          name="categorie"
+          data-js="categorie"
+        />
 
-      <section class="ProInfo">
-        <h2 class="ProAbout">About me:</h2>
-        <p class="aboutText">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet.
-        </p>
-      </section>
+        ><button type="button" data-js="add-button" class="add-Button">
+          Submit
+        </button>
+      </form>
 
-      <section class="counters">
-        <section class="numCards">
-          <p class="cardImage">Questions</p>
-          <p class="countCards">12</p>
-        </section>
-        <section class="numBookmarks">
-          <p class="bookmarkSign">
-            <img
-              src="https://cdn.iconscout.com/icon/premium/png-512-thumb/bookmark-check-6403578-5388118.png?f=avif&w=256"
-              alt="Bookmark"
-              title="Bookmarks"
-            />
-          </p>
-          <p class="countBookmarks">9</p>
-        </section>
-      </section>
-
-      <section class="settings">
-        <h2 class="settingText">Settings</h2>
-        <button type="button" class="toggleButton">light/dark mode</button>
-      </section>
-      <h2>"live long and prosper 🖖"</h2>
+      <ol class="card-container" data-js="card-container">
+        <li class="card-container__newCard">I'm a new question card!</li>
+      </ol>
     </main>
-
     <footer>
       <section>
         <ul class="nav">
@@ -79,7 +78,7 @@
               />
             </a>
           </li>
-          <li>
+          <li class="aktiv">
             <a href="form.html">
               <img
                 src="https://cdn.iconscout.com/icon/premium/png-512-thumb/calendar-plus-6403588-5388028.png?f=avif&w=256"
@@ -88,7 +87,7 @@
               />
             </a>
           </li>
-          <li class="aktiv">
+          <li>
             <a href="profile.html">
               <img
                 src="https://cdn.iconscout.com/icon/premium/png-512-thumb/vulcan-3200337-2662247.png?f=avif&w=256"

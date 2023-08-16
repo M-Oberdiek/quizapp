@@ -4,16 +4,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
   color: white;
   font-size: 150%;
-  height: 300px;
+  height: 350px;
   width: 80%;
   background-color: var(--orange-color);
   margin: 10px 1.25rem 1.25rem 1.25rem;
   padding: 1.25rem;
   border: 1px solid var(--blue-color);
   border-radius: 1.25rem;
+}
+
+.answer {
+  visibility: hidden;
+}
+.answer--show {
+  visibility: visible;
+  color: black;
 }
 
 .show {
@@ -30,6 +37,7 @@
   background-color: var(--blue-color);
   cursor: pointer;
 }
+
 .bookmark {
   background-color: azure;
   height: 40px;
@@ -37,10 +45,10 @@
   border: 3px solid var(--blue-color);
   border-radius: 0 0 1.25rem 1.25rem;
   position: absolute;
-  top: -290px;
+  top: -340px;
   right: -290px;
 }
-.bookmarkActive {
+.bookmark--activ {
   background-color: var(--blue-color);
 }
 
@@ -60,11 +68,47 @@
 
   /* Position the tooltip */
   position: absolute;
-  top: -270px;
+  top: -310px;
   right: -270px;
   z-index: 1;
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+form {
+  width: 60%;
+  height: 60%;
+  border: 4px solid var(--orange-color);
+  border-radius: 1.25rem;
+  padding: 2rem;
+}
+
+textarea {
+  border: 4px solid var(--orange-color);
+  border-radius: 1.25rem;
+  margin-top: -1rem;
+}
+
+.add-Button {
+  border: 4px solid var(--orange-color);
+  border-radius: 1.25rem;
+  width: 7rem;
+  height: 2rem;
+}
+
+.categorie {
+  border: 4px solid var(--orange-color);
+  border-radius: 1.25rem;
+  width: 10rem;
+  height: 2rem;
+  padding-left: 0.7rem;
+}
+
+#charCounterQuestion,
+#charCounterAnswer {
+  color: var(--colorText-dark);
+  margin-top: -0.1rem;
+  text-align: center;
 }
